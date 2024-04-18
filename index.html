@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 90vh;
+      margin-top: 8px;
+      margin-left: 8px;
+      padding: 0;
+    }
+    .grid-container {
+      height: 760px;
+      width: 760px;
+      padding: 10px;
+      display: grid;
+      background-color: #000;
+      grid-template-columns: 100px 100px 100px 100px 100px 100px 100px;
+      grid-template-rows: 100px 100px 100px 100px 100px 100px 100px;
+      gap: 10px;
+    }
+
+    .grid-item {
+      background-color: #F0F1EC;
+    }
+
+    .white1 {
+      grid-row: span 2;
+    }
+    
+    .red3 {
+      background-color: #E72F24;
+      grid-column-start: 3;
+      grid-column-end: 4;
+    }
+    
+    .white4 {
+      grid-column: span 3;
+      grid-row: span 2;
+    }
+    
+    .white5 {
+      grid-row: span 2;
+    }
+    
+    .yellow6 {
+      background-color: #F9D01E;      
+      grid-column-start: 1;
+    }
+    
+    .yellow7 {
+      background-color: #F9D01E;
+      grid-area: 2 / 2 / 5 / 4;
+    }
+    
+    .white8 {
+      grid-column: span 2;
+    }
+    
+    .white9 {
+      grid-area: 4 / 4 / 5 / 5;
+    }
+    
+    .white10 {
+      grid-area: 4 / 5 / 6 / 6;
+    }
+    
+    .blue11 {
+      background-color: #004592;
+      grid-row: span 2;
+    }
+    
+    .yellow12 {
+      background-color: #F9D01E;      
+      grid-area: 5 / 6 / 6 / 7;
+    }
+        
+    .white14 {
+      grid-area: 4 / 7 / 6 / -1;
+    }
+    
+    .white15 {
+      grid-row: span 2;
+    }
+    
+    .white16 {
+      grid-row-start: 6;
+    }
+    
+    .white17 {
+      grid-area: 5 / 2 / 7 / 5;
+    }
+    
+    .white18 {
+      grid-row-start: 7;
+      grid-column: span 2;
+    }
+    
+    .white19 {
+      grid-row-start: 7;
+      grid-column: span 2;
+      
+    }
+    
+    .blue20 {
+      background-color: #004592;
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+    
+    .white21 {
+      grid-row: span 2;
+    }
+
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="grid-container">
+    <div class="grid-item white1"></div>
+    <div class="grid-item white2"></div>
+    <div class="grid-item red3"></div>
+    <div class="grid-item white4"></div>
+    <div class="grid-item white5"></div>
+    <div class="grid-item yellow6"></div>
+    <div class="grid-item yellow7"></div>
+    <div class="grid-item white8"></div>
+    <div class="grid-item white9"></div>
+    <div class="grid-item white10"></div>
+    <div class="grid-item blue11"></div>
+    <div class="grid-item yellow12"></div>
+    <div class="grid-item white13"></div>
+    <div class="grid-item white14"></div>
+    <div class="grid-item white15"></div>
+    <div class="grid-item white16"></div>
+    <div class="grid-item white17"></div>
+    <div class="grid-item white18"></div>
+    <div class="grid-item white19"></div>
+    <div class="grid-item blue20"></div>
+    <div class="grid-item white21"></div>
+  </div>
+</body>
+
+</html>
